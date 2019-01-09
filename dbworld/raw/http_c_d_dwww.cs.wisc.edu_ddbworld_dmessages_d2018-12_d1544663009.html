@@ -1,0 +1,165 @@
+<html>
+ <head>
+  <title>DBWorld Message</title>
+ </head>
+ <body>
+  <pre style="white-space: pre-wrap;">?===========================================================
+PAKDD 2019 Call for Contest Participation
+
+The 23rd Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2019)
+April 14-17, 2019
+Macau, China
+<a href="http://www.pakdd2019.org">http://www.pakdd2019.org</a>
+===========================================================
+
+
+PAKDD 2019 Challenge
+
+The 4th AutoML Challenge (AutoML3+): AutoML for Lifelong Machine Learning
+
+
+Overview
+==================
+
+In many real-world machine learning applications, AutoML is strongly needed due to the limited machine learning expertise of developers. Moreover, batches of data in many real-world applications may be arriving daily, weekly, monthly, or yearly, for instance, and the data distributions are changing relatively slowly over time. This presents a continuous learning or Lifelong Machine Learning challenge for an AutoML system. Typical learning problems of this kind include customer relationship management, on-line advertising, recommendation, sentiment analysis, fraud detection, spam filtering, transportation monitoring, econometrics, patient monitoring, climate monitoring, manufacturing and so on. In this competition, which we are calling AutoML for Lifelong Machine Learning, large-scale datasets collected from some of these real-world applications will be used. Compared with previous AutoML competitions (<a href="http://automl.chalearn.org/">http://automl.chalearn.org/</a>), the focus of this competition is on drifting concepts, that is to say, the data distribution is changing over time. Participants are invited to design a computer program capable of autonomously (without any human intervention) developing predictive models that are trained and evaluated in a lifelong machine learning setting.
+
+Although the scenario is fairly standard, this challenge introduces the following difficulties:
+
+? Algorithm scalability. We will provide datasets that are 10-100 times larger than in previous challenges we organized.
+
+? Varied feature types. Varied feature types will be included (continuous, binary, ordinal, categorical, multi-value categorical, temporal). Categorical variables with a large number of values following a power law will be included.
+
+? Concept drift. The data distribution is slowly changing over time.
+
+? Lifelong setting. All datasets included in this competition are chronologically split into 10 batches, meaning that instance batches in all datasets are chronologically ordered (note that instances in one batch are not guaranteed to be chronologically ordered). The algorithms will be tested for their capability of adapting to changes in data distribution by exposing them to successive test batches chronologically ordered. After testing, the labels will be revealed to the learning machines and incorporated in the training data.
+
+There are three phases of the competition:
+
+1. The Feedback phase is a phase with code submission, participants can practice on 5 datasets that are of similar nature as the datasets of the second phase. Participants can make a limited number of submissions. Participants can download the labeled training data and the unlabeled test set. So participants can prepare their code submission at home and submit it later. The LAST code submission will be forwarded to the next phase for final testing.
+
+2. The Testing phase is to help participants ensure their submissions can be correctly run in the AutoML phase, i.e., without running out of time or memory.
+
+3. The AutoML phase is the blind test phase with no submission. The last submission of the previous phase is blind tested on 5 new datasets. Participant's code will be trained and tested automatically, without human intervention. The final score will be evaluated by the result of the blind testing. Note that we have an extra testing phase now to ensure the correct execution of submissions.
+
+Please visit the official competition website for further information: https://www.4paradigm.com/competition/pakdd2019
+ 
+
+Prizes (sponsored by 4paradigm, ChaLearn, and Amazon)
+==================
+
+AutoML Phase
+
+- First place: Prize + Travel Grant
+
+- Second place: Prize + Travel Grant
+
+- Third place: Prize + Travel Grant
+
+PAKDD 2019 will also sponsor 10 complimentary registrations for top ranked teams, which will be selected by PAKDD 2019 Contest Co-Chairs.
+ 
+
+Evaluation
+==================
+
+Participants must prepare an AutoML program that will be uploaded to the challenge platform. The code will be executed in computer workers, autonomously; and allowed to run for a maximum amount of time. Code exceeding this time will be penalized with setting the dataset's AUC as 0. Different from previous challenges, in this competition, we will evaluate the Lifelong learning capabilities of AutoML solutions, hence an appropriate protocol has been designed.
+
+The datasets are chronologically split into 10 batches, each batch will represent a stage of the lifelong evaluation scenario. Code submitted by participants will use the first batch to generate a model, which will then be used to predict labels for the first test batch (i.e., the second batch). The performance on this test batch will be recorded. After this, the labels of the first test batch will be made available to the computer program. The computer program may use such labels to improve its initial model and make predictions for the subsequent test batch. The process will continue until all of the test batches have been evaluated. We call this 1 / 9 split evaluation, meaning that first batch for initial training, all successive 9 batches for evaluation.
+
+ 
+Dissemination 
+==================
+
+Top ranked participants will be invited to a workshop collocated with PAKDD 2019 to describe their methods and findings. Winners of prizes are expected to attend.
+
+Also, organizers are making arrangements for the possible publication of a book chapter or article written jointly by organizers and the participants with the best solutions. Details TBA.  
+
+
+Participants
+==================
+
+- The competition will be run in the CodaLab competition platform.
+
+- The competition is open for all interested researchers, specialists and students. Members of the Contest Organizing Committee cannot participate.
+
+- Participants may submit solutions as teams made up of one or more persons.
+
+- Each team needs to designate a leader responsible for communication with the Organizers.
+
+- One person can only be part of one team.
+
+- A winner of the competition is chosen on the basis of the final evaluation results. In the case of draws in the evaluation scores, time of the submission will be taken into account.
+
+- Each team is obligated to provide a short report  (fact sheet) describing their final solution.
+
+- By enrolling to this competition you grant the organizers rights to process your submissions for the purpose of evaluation and post-competition research.
+
+ 
+More detailed terms and conditions will be released in the competition main page: https://www.4paradigm.com/competition/pakdd2019.
+
+ 
+Timeline
+==================
+
+Competition begins: December 25, 2018
+
+Feedback Phase ends: March 7, 2019 (May be Modified)
+
+Testing Phase ends: March 15, 2019
+
+AutoML Phase ends: March 20, 2019
+
+Main Conference begins: April 14 , 2019
+
+ 
+Committee
+==================
+
+- Isabelle Guyon, UPSud/INRIA Univ. Paris-Saclay, France &amp; ChaLearn, USA, (Coordinator, Platform Administrator, Advisor), guyon@clopinet.com
+
+- Quanming Yao, 4Paradigm Inc. Beijing, China, (Coordinator, Baseline Provider, Data Provider), yaoquanming@4paradigm.com
+
+- Ling Yue, 4Paradigm Inc. Beijing, China, (Coordinator, Baseline Provider, Platform Administrator), yueling@4paradigm.com
+
+- Mengshuo Wang, 4Paradigm Inc. Beijing, China, (Coordinator, Baseline Provider, Data Provider), wangmengshuo@4paradigm.com
+
+- Wei-Wei Tu, 4Paradigm Inc., Beijing, China, (Coordinator, Baseline Provider, Data Provider), tuww.cn@gmail.com
+
+- Hugo Jair Escalante, INAOE (Mexico), ChaLearn (USA), (Platform Administrator, Coordinator), hugo.jair@gmail.com
+
+- Evelyne Viegas, Microsoft Research, (Coordinator, Advisor), evelynev@microsoft.com
+ 
+
+Sponsorship
+==================
+
+The Fourth Paradigm Inc. (https://www.4paradigm.com/) is the main sponsor.
+
+ChaLearn (<a href="http://www.chalearn.org/">http://www.chalearn.org/</a>) and CodaLab(<a href="http://codalab.org/">http://codalab.org/</a>) is the platform and data provider.
+
+Microsoft (https://microsoft.com/) is the computer worker provider.
+
+Amazon (https://amazon.com/) sponsors part of the prizes and travel grants.
+
+
+About
+==================
+
+Previous AutoML Challenges can be found in https://competitions.codalab.org/competitions/2321, https://competitions.codalab.org/competitions/17767, and https://competitions.codalab.org/competitions/19836.
+
+AutoML workshops can be found in <a href="http://automl.chalearn.org/">http://automl.chalearn.org/</a>.
+
+Springer Series on Challenges in Machine Learning can be found in <a href="http://www.springer.com/series/15602">http://www.springer.com/series/15602</a>.
+
+Detailed papers about previous AutoML Challenges:
+
+- I. Guyon et al. A Brief Review of the ChaLearn AutoML Challenge: Any-time Any-dataset Learning Without Human Intervention. ICML W 2016.
+
+- I. Guyon et al. Design of the 2015 ChaLearn AutoML challenge. IJCNN 2015.
+
+
+Further Information
+*******************
+More details can be found in the competition main page: https://www.4paradigm.com/competition/pakdd2019
+</pre> 
+ </body>
+</html>

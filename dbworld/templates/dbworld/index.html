@@ -1,0 +1,77 @@
+<html>
+ <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="search engine">
+    <meta name="author" content="mbinary">
+    <title>search!</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'dbworld/image/icon.jpg' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dbworld/css/result.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    -->
+ </head>
+
+ <body>
+     <div class="header">
+         <div class="nav">
+            <h1> <a href="/dbworld" >Dbworld</a></h1>
+            <ul > Sort by: 
+                {% for i in keys %}
+                <li ><a href="sort={{ i }}">{{i }}&emsp;</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <button id="update"><a href="update" >UPDATE</a><span>{{ info }}</span> </button>
+        <form method="post" action="search">
+             {% csrf_token %}
+           	<input class="search" name="search" type="text" placeholder="Let me search for you(●ˇ∀ˇ●)">
+            <input type="submit" value="search">
+        </form>
+
+        &emsp;
+        <span><b style="color:orange"> {{ docs|length }}</b> results in total </span>
+    </div>
+
+        <!--
+         <form  method="post" action="sort">
+            {% csrf_token %}
+            <select id="options">
+        		{% for i in keys %}
+                <option  id="{{ i }}" value="{{ i }}"> {{i}}</option>
+        	    {% endfor %}
+            </select>
+            <input type="submit" value="sort">
+        </form>
+        -->
+
+        <div>        
+            {% load pagination_tags %}
+            {% autopaginate docs 20 %}
+            {% for i in docs %}
+            <div class="result">
+                <div>
+                <h3>{{forloop.counter}}. <a href="{{ i.webpageUrl }}" >{{ i.subject }}</a> </h3>
+                <span style="float:right;color:grey">Sender: {{ i.sender }} : {{ i.sendTime}}</span>
+                </div>
+                <div class="info">
+                    <strong>
+                        <span> Time: {{ i.begin }}- {{ i.deadline }}</span> &emsp;
+                        <span> Location: {{i.loc}} </span>                      
+                        <br> 
+                        <span> Keywords: {{ i.keywords }}</span> 
+                    </strong> 
+                </div>
+
+                <p > {{ i.desc }}</p>
+            </div>
+        {% endfor %}
+        {% paginate %}
+        </div>
+ </body>
+</html>

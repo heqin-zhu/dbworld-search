@@ -1,0 +1,959 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
+  <meta name="ProgId" content="Word.Document"> 
+  <meta name="Generator" content="Microsoft Word 14"> 
+  <meta name="Originator" content="Microsoft Word 14"> 
+  <link rel="File-List" href="JCSE_V12N3_Issue%20Announcement.files/filelist.xml"> 
+  <title>?Paper Title :  Extending the Multidimensional Data Model to Handle
+Complex Data</title> 
+  <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Hyun Jung Lee</o:Author>
+  <o:LastAuthor>MKIM</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>197</o:TotalTime>
+  <o:Created>2018-09-28T07:07:00Z</o:Created>
+  <o:LastSaved>2018-09-28T07:07:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1298</o:Words>
+  <o:Characters>7401</o:Characters>
+  <o:Company>Drexel University</o:Company>
+  <o:Lines>61</o:Lines>
+  <o:Paragraphs>17</o:Paragraphs>
+  <o:CharactersWithSpaces>8682</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>800x600</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--> 
+  <link rel="themeData" href="JCSE_V12N3_Issue%20Announcement.files/themedata.thmx"> 
+  <link rel="colorSchemeMapping" href="JCSE_V12N3_Issue%20Announcement.files/colorschememapping.xml"> 
+  <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>KO</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]-->
+  <!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--> 
+  <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:Batang;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:65539 0 0 0 1 0;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:65539 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:MyriadPro-Semibold;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:129;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+@font-face
+	{font-family:TTB0Co00;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:TTB0Do00;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@MyriadPro-Semibold";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:129;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"??","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:Vrinda;
+	color:windowtext;
+	mso-font-kerning:1.0pt;
+	mso-bidi-language:#AC45;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"\BA38\B9AC\AE00 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 225.65pt right 451.3pt;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"??","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:Vrinda;
+	color:windowtext;
+	mso-font-kerning:1.0pt;
+	mso-bidi-language:#AC45;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"\BC14\B2E5\AE00 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 225.65pt right 451.3pt;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"??","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:Vrinda;
+	color:windowtext;
+	mso-font-kerning:1.0pt;
+	mso-bidi-language:#AC45;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Batang;
+	color:black;}
+span.site1
+	{mso-style-name:site1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	color:#A93800;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+span.Char
+	{mso-style-name:"\BA38\B9AC\AE00 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:\BA38\B9AC\AE00;
+	mso-bidi-font-size:12.0pt;
+	font-family:"??","serif";
+	mso-ascii-font-family:Batang;
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;
+	mso-bidi-language:#AC45;}
+span.Char0
+	{mso-style-name:"\BC14\B2E5\AE00 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:\BC14\B2E5\AE00;
+	mso-bidi-font-size:12.0pt;
+	font-family:"??","serif";
+	mso-ascii-font-family:Batang;
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;
+	mso-bidi-language:#AC45;}
+span.ppbody
+	{mso-style-name:pp_body;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-fareast-font-family:Batang;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("JCSE_V12N3_Issue%20Announcement.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("JCSE_V12N3_Issue%20Announcement.files/header.htm") fcs;
+	mso-endnote-separator:url("JCSE_V12N3_Issue%20Announcement.files/header.htm") es;
+	mso-endnote-continuation-separator:url("JCSE_V12N3_Issue%20Announcement.files/header.htm") ecs;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:99.25pt 52.05pt 3.0cm 2.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style> 
+  <!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"\D45C\C900 \D45C";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]-->
+  <!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]-->
+  <!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--> 
+ </head> 
+ <body lang="KO" link="blue" vlink="purple" style="tab-interval:40.0pt"> 
+  <div class="WordSection1"> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">Dear Colleague:
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" style="line-height:12.0pt;mso-line-height-rule:exactly;
+word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">We are pleased to announce the release of a new issue of Journal of Computing Science and Engineering (JCSE), published by the Korean Institute of Information Scientists and Engineers (KIISE). </span><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">KIISE is the largest organization for computer scientists in Korea with over 4,000 active members. 
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" style="line-height:12.0pt;mso-line-height-rule:exactly;
+word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:12.0pt;
+mso-line-height-rule:exactly;mso-layout-grid-align:none;word-break:keep-all"><i><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Journal of Computing Science and Engineering</span></i><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (JCSE) is a peer-reviewed quarterly journal that publishes high-quality papers on all aspects of computing science and engineering. JCSE aims to foster communication between academia and industry within the rapidly evolving field of Computing Science and Engineering. The journal is intended to promote problem-oriented research that fuses academic and industrial expertise. The journal focuses on emerging computer and information technologies including, but not limited to, embedded computing, ubiquitous computing, convergence computing, green computing, smart and intelligent computing, and human computing. JCSE publishes original research contributions, surveys, and experimental studies with scientific advances.
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:12.0pt;
+mso-line-height-rule:exactly;mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:12.0pt;
+mso-line-height-rule:exactly;mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Please take a look at our new issue posted at <a href="http://jcse.kiise.org/">http://jcse.kiise.org</a>. All the papers can be downloaded from the Web page.
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">The contents of the latest issue of Journal of Computing Science and Engineering (JCSE)
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">Official Publication of the Korean Institute of Information Scientists and Engineers
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">Volume 12, Number 3, September 2018
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span class="SpellE"><span class="GramE"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt">pISSN</span></span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">: 1976-4677
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span class="SpellE"><span class="GramE"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt">eISSN</span></span></span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">: 2093-8020
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">* JCSE web page: http://jcse.kiise.org
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">* <span class="GramE">e-submission</span>: http://mc.manuscriptcentral.com/jcse
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">Editor in Chief: Insup Lee (University of Pennsylvania)
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;text-indent:78.0pt;
+mso-char-indent-count:6.5;line-height:150%;mso-layout-grid-align:none;
+word-break:keep-all"><span lang="FR" style="font-size:12.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;mso-ansi-language:
+FR">Il-Yeol Song (Drexel University) 
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;text-indent:78.0pt;
+mso-char-indent-count:6.5;line-height:150%;mso-layout-grid-align:none;
+word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt">Jong C. Park (KAIST)
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;text-indent:78.0pt;
+mso-char-indent-count:6.5;line-height:150%;mso-layout-grid-align:none;
+word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt">Taewhan Kim (Seoul National University)
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-font-kerning:
+0pt">JCSE, vol. 12, no. 3, September 2018
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">
+      <o:p>
+       &nbsp;
+      </o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">[Paper One]
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt">- Title:</span></b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold"> </span><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">Cache-Aware SPM Allocation Algorithms for Performance and Energy Optimization on Hybrid SPM-Cache Architecture</span><span lang="EN-US" style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt">- Authors:</span></b><span lang="EN-US"> </span><span class="GramE"><span lang="EN-US" style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">Lan</span></span><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold"> Wu and Wei Zhang
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt">- Keyword:</span></b><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold"> </span><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">Scratch-Pad Memories (SPMs); Cache memories; Energy optimizations; Stack distance; Model checking</span><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-language:AR-SA">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Abstract
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:MyriadPro-Semibold;
+mso-font-kerning:0pt;mso-bidi-language:AR-SA">Recently, hybrid SPM-cache (HSC) architectures that combine caches and scratch-pad memories (SPMs) have been increasingly used in commercial processors and research prototypes. However, most SPM allocation algorithms do not make use of the cache in parallel, so they cannot harness the full potential of the HSC architecture. In this paper, we explore six SPM allocation algorithms, including four heuristic-based algorithms and two optimal algorithms based on model checking. Our experimental results show that the greedy stack distance based allocation for energy (GSDA-E) can also reduce the energy by as much or by nearly as much as the optimal results attained by the optimal stack distance based allocation for energy (OSDA-E), while also achieving performance close to those of the OSDA and GSDA.
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" style="line-height:150%"><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue">To obtain a copy of the entire article, click on the link below.<br> </span><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:blue"><a href="http://jcse.kiise.org/PublishedPaper/year_abstract.asp?idx=312&amp;page_url=Current_Issuesurl=Current_Issues">JCSE, vol. 12, no. 3, pp.91-105</a>
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" style="line-height:150%"><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">[Paper Two]
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Title:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> </span><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">Exploring GPU Data Cache Leakage Management Techniques</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Authors:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> </span><span class="SpellE"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;mso-bidi-font-weight:bold">Hao</span></span><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold"> Wen and Wei Zhang</span><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;
+mso-bidi-font-weight:bold">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Keyword:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> </span><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">GPU; Cache; leakage reduction; Two-level low power mode</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-language:AR-SA">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Abstract
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:MyriadPro-Semibold;
+mso-font-kerning:0pt;mso-bidi-language:AR-SA">In this paper, we study how to reduce cache leakage energy efficiently for GPU data caches (L1 and L2). The access pattern of GPU cache is different from that of the CPU, which usually has little locality and high miss rate. In addition, GPU can hide memory latency more effectively due to multi-threading. Because of the above reasons, we find it is possible to place cache lines of GPU data caches into the low power mode more aggressively than traditional leakage management for CPU caches that can reduce more energy leakage without significant performance degradation. In some cases, we find it is possible for the GPU to bypass the L1 data cache to save 100% energy leakage while generating better performance. Also, we propose to combine the drowsy and gated-VDD techniques that can exploit short and long access intervals to minimize energy leakage with insignificant performance overhead. Interestingly, we may achieve better <span class="GramE">performance</span> for some benchmarks due to the different cache access patterns after applying the leakage reduction method.
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" style="line-height:150%"><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue">To obtain a copy of the entire article, click on the link below.<br> </span><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:blue"><a href="http://jcse.kiise.org/PublishedPaper/year_abstract.asp?idx=313&amp;page_url=Current_Issues">JCSE, vol. 12, no. 3, pp.106-114</a>
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" style="line-height:150%"><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">[Paper Three]
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Title:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> </span><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">Paired Many-to-Many 3-Disjoint Path Covers in Bipartite Toroidal Grids</span><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:MyriadPro-Semibold;
+mso-font-kerning:0pt;mso-bidi-language:AR-SA">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Authors:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> Jung-Heum Park
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Keyword:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> </span><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">Disjoint path; Path cover; Path partition; <span class="GramE">Cylindrical</span> grid; Torus</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Abstract
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">Given two disjoint vertex-sets, <i style="mso-bidi-font-style:normal">S</i> = {<i style="mso-bidi-font-style:normal">s</i></span><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">1</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">, ...,<span class="SpellE"><i style="mso-bidi-font-style:normal">s</i><span style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Do00&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Batang;mso-bidi-font-family:TTB0Do00">k</span></span>} and <i style="mso-bidi-font-style:normal">T</i> = {<i style="mso-bidi-font-style:
+normal">t</i></span><span lang="EN-US" style="font-size:6.0pt;line-height:150%;
+font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:TTB0Co00;mso-font-kerning:
+0pt;mso-bidi-language:AR-SA">1</span><i style="mso-bidi-font-style:normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">, ..., <span class="SpellE">t<span style="font-size:6.0pt;line-height:
+150%;font-family:&quot;TTB0Do00&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Batang;
+mso-bidi-font-family:TTB0Do00;font-style:normal">k</span></span></span></i><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">} in a graph, a paired <i style="mso-bidi-font-style:normal">many-to-many k-disjoint path cover</i> joining <i style="mso-bidi-font-style:normal">S </i>and <i style="mso-bidi-font-style:normal">T</i> is a set of pairwise vertex-disjoint paths {<i style="mso-bidi-font-style:normal">P</i></span><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">1</span><i style="mso-bidi-font-style:normal"><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">, ...,<span class="SpellE">P<span style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Do00&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Batang;mso-bidi-font-family:TTB0Do00;font-style:normal">k</span></span></span></i><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">} that altogether cover every vertex of the graph, in which each path <i style="mso-bidi-font-style:normal">Pi</i> runs from <span class="SpellE"><i style="mso-bidi-font-style:normal">s</i><span style="font-size:6.0pt;
+line-height:150%;font-family:&quot;TTB0Do00&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Batang;mso-bidi-font-family:TTB0Do00">i</span></span> to <span class="SpellE"><i style="mso-bidi-font-style:normal">t</i><span style="font-size:6.0pt;
+line-height:150%;font-family:&quot;TTB0Do00&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Batang;mso-bidi-font-family:TTB0Do00">i</span></span>. In this paper, we first study the disjoint-path-cover properties of a bipartite cylindrical grid. Based on the findings, we prove that every bipartite toroidal grid, excluding the smallest one, has a paired many-to-many 3-disjoint path cover joining <i style="mso-bidi-font-style:normal">S</i> = {<i style="mso-bidi-font-style:normal">s</i></span><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">1</span><i style="mso-bidi-font-style:normal"><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">, s</span></i><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">2</span><i style="mso-bidi-font-style:normal"><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">, s</span></i><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">3</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">} and <i style="mso-bidi-font-style:normal">T</i> = {<i style="mso-bidi-font-style:normal">t</i></span><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">1</span><i style="mso-bidi-font-style:normal"><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">, t</span></i><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">2</span><i style="mso-bidi-font-style:normal"><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">, t</span></i><span lang="EN-US" style="font-size:6.0pt;line-height:150%;font-family:&quot;TTB0Co00&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:TTB0Co00;mso-font-kerning:0pt;mso-bidi-language:AR-SA">3</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">} if and only if the set <i style="mso-bidi-font-style:normal">S</i> </span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-font-kerning:0pt;mso-bidi-language:AR-SA">U</span><i style="mso-bidi-font-style:
+normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:MyriadPro-Semibold;
+mso-font-kerning:0pt;mso-bidi-language:AR-SA">T</span></i><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA"> contains the equal numbers of vertices from different parts of the bipartition.
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" style="line-height:150%"><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue">To obtain a copy of the entire article, click on the link below.<br> </span><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:blue"><a href="http://jcse.kiise.org/PublishedPaper/year_abstract.asp?idx=314&amp;page_url=Current_Issues">JCSE, vol. 12, no. 3, pp.115-126</a>
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" style="line-height:150%"><b style="mso-bidi-font-weight:
+normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;color:blue">
+      <o:p>
+       &nbsp;
+      </o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">[Paper Four]
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Title:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> </span><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">Vision-Based Blind Spot Monitoring Using Rear-View Camera and Its Real-Time Implementation in an Embedded System</span><span lang="EN-US" style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Authors:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> <span class="SpellE">Kyeong</span> <span class="SpellE">Hoon</span> Jung and Kang Yi
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Keyword:</span></b><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold"> </span><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:AR-SA">Advanced driver assistance system; Blind spot monitoring; Vehicle detection; <span class="GramE">Intelligent</span> vehicle</span><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:
+0pt;mso-bidi-font-weight:bold">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">- Abstract
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:MyriadPro-Semibold;mso-font-kerning:0pt;mso-bidi-language:
+AR-SA">Blind spot monitoring (BSM) is one of the essential functions of Advanced Driver Assistance Systems (ADAS). In this paper, we propose a vision-based monitoring algorithm to detect vehicles in a blind-spot area using a rear-view camera. Instead of moving around the whole image to search for a vehicle, we use well-defined detection windows with fixed position and size. And we used histogram of oriented gradients (HOG) and the support vector machine (SVM) to detect a vehicle in each detection window. When a vehicle is detected, we compute the motion vector of the vehicle to determine if it approaches the ego vehicle or not. The alarm signal is finally generated based on history of events. To evaluate performance of the BSM algorithm, we captured various kinds of sequences by using a rear-view camera. Experimental results reveal precision higher than 98% and recall higher than 99%. We also develop high-speed methods to improve processing speed while keeping performance degradation as minimal as possible. Implementation of this fast algorithm on a commercial embedded device validated real-time characteristics of the proposed BSM algorithm.</span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold">
+     <o:p></o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt;mso-bidi-font-weight:bold">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" style="line-height:150%"><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue">To obtain a copy of the entire article, click on the link below.<br> </span><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:blue"><a href="http://jcse.kiise.org/PublishedPaper/year_abstract.asp?idx=315&amp;page_url=Current_Issues">JCSE, vol. 12, no. 3, pp.127-138</a>
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" style="line-height:150%"><b style="mso-bidi-font-weight:
+normal"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;color:blue">
+      <o:p>
+       &nbsp;
+      </o:p></span></b></p> 
+   <p class="MsoNormal" style="line-height:150%"><span lang="EN-US" style="font-size:
+12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+     <o:p>
+      &nbsp;
+     </o:p></span></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><b><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt">[Call For Papers]
+      <o:p></o:p></span></b></p> 
+   <p class="MsoNormal" align="left" style="text-align:left;line-height:150%;
+mso-layout-grid-align:none;word-break:keep-all"><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Journal of Computing Science and Engineering (JCSE), published by the Korean Institute of Information Scientists and Engineers (KIISE) is devoted to the timely dissemination of novel results and discussions on all aspects of computing science and engineering, divided into Foundations, Software &amp; Applications, and Systems &amp; Architecture. Papers are solicited in all areas of computing science and engineering. See JCSE home page at </span><span lang="EN-US" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-font-kerning:0pt"><a href="http://jcse.kiise.org/">http://jcse.kiise.org</a> for the subareas.
+     <o:p></o:p></span></p> 
+   <p><span lang="EN-US">The journal publishes regularly submitted papers, invited papers, selected best papers from reputable conferences and workshops, and thematic issues that address hot research topics. Potential authors are invited to submit their manuscripts electronically, prepared in PDF files, through </span><span class="site1"><span lang="EN-US" style="mso-ansi-font-size:12.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><a href="http://mc.manuscriptcentral.com/jcse" target="_blank"><span style="color:#A93800;text-decoration:none;text-underline:none">http://mc.manuscriptcentral.com/jcse</span></a></span></span><span lang="EN-US">, where <span class="SpellE">ScholarOne</span> is used for on-line submission and review. Authors are especially encouraged to submit papers of around 10 but not more than 30 double-spaced pages in twelve point <span class="GramE">type</span>. The corresponding author's full postal and e-mail addresses, telephone and FAX numbers as well as current affiliation information must be given on the manuscript. Further inquiries are welcome at JCSE Editorial Office, </span><span class="site1"><span lang="EN-US" style="mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><a href="mailto:office@kiise.org"><span style="color:#A93800;text-decoration:none;
+text-underline:none">office@kiise.org</span></a></span></span><span lang="EN-US"> (phone: +82-2-588-9240; FAX: +82-2-521-1352).</span></p> 
+  </div>   
+ </body>
+</html>

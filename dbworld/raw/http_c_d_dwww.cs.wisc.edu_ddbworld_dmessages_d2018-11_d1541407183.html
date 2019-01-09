@@ -1,0 +1,62 @@
+<html>
+ <head>
+  <title>DBWorld Message</title>
+ </head>
+ <body>
+  <pre style="white-space: pre-wrap;">Schema der Sortierung
+1) oben - unten (Stockwerke)
+
+(mit Sichtweise vom Eingang) 
+2) hinten - vorne
+3) links - rechts (Raum, im Raum)
+4) links - rechts (Dose - wenn m?glich)
+
+jeweils 2 frei zwischen Stockwerken
+
+
+DG (4) 1-4 (5/6 Reserve)
+
+1: AP
+2: "altkabel"
+3-4: Doppeldose
+
+1. OG (8) 7-14 (15/16 Reserve)
+
+7-8: KiZ1
+9-10: Kiz2 (1 reservieren)
+11-12: AP 
+13-14: Arbeitszimmer
+
+EG (4) 17- 20 (21/22 Reserve)
+17: Fernseher
+18: AP
+19-20: Dose
+
+
+
+Strom:
+-Switch
+-Server
+-3 PoE
+- Fritz?
+  
+IP-Ranges:
+
+1-20: Netzwerkinfrastruktur
+- 1 Fritz/Gateway
+21-...100 Clients DHCP
+- 2 
+- 240-250 Server (absteigend)
+
+
+http_proxy=<a href="http://172.29.0.1:8000">http://172.29.0.1:8000</a>
+JAVA_OPTS= -Dhttp.proxyHost=172.29.0.1 -Dhttp.proxyPort=8000 -Dhttps.proxyHost=172.29.0.1 -Dhttps.proxyPort=8000
+https_proxy=https://172.29.0.1:8000
+git config --global http.proxy <a href="http://172.29.0.1:8000">http://172.29.0.1:8000</a>
+
+wget <a href="http://mirror.synyx.de/apache/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz">http://mirror.synyx.de/apache/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz</a>
+
+23.-26.
+</pre> 
+ </body>
+</html>
