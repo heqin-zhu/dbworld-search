@@ -10,6 +10,7 @@
     - python3.6
         - summa (text-rank)
         - dj-pagination
+        - BeautifulSoup
 
 ## 结果展示
 - 首页
@@ -25,8 +26,9 @@
 
 - Doc: 一个文件, 也就是一个网页, 包含一些主要信息.
 - File: 外键是Doc, 包含了 网页文件的文本内容, 以及标记是否已经被索引(`isIndexed`)
-- Wordindex: 这就是倒排索引中的一个项, 包含一个 term, 和倒排索引表,  倒排索引表设计成 hashtable 形式, 键为 Doc. id, 值为 在 Doc 中出现的次数. 为了简便,在数据库库中的存储形式是将上面的 hashtable (在 python 中 为 dict 类型) 用 json 格式保存为文本字符串形式.  需要注意的是
-增加一个 键值对不能 使用下面代码
+- Wordindex: 这就是倒排索引中的一个项, 包含一个 term, 和倒排索引表,  倒排索引表设计成 hashtable 形式, 键为 Doc. id, 值为 在 Doc 中出现的次数. 为了简便,在数据库库中的存储形式是将上面的 hashtable (在 python 中 为 dict 类型) 用 json 格式保存为文本字符串形式.
+
+需要注意的是增加一个键值对 **不能** 使用下面代码
 ```python
 word.index [ doc.id] = num
 word.save()
