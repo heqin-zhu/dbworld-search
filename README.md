@@ -1,3 +1,5 @@
+![](images/dbworld.png)
+
 # 搜索引擎实现
 使用 Django-2.1.3, python3.6 实现的一个非常非常 naive 的搜索引擎.
 

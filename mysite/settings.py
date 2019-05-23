@@ -26,7 +26,7 @@ SECRET_KEY = 'kui16*q6%02@w2xsyb@@m(ijg8$g62904z-8mlxz581e3#4xqm'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1','0.0.0.0','localhost','192.168.43.49']
+ALLOWED_HOSTS = ['127.0.0.1','0.0.0.0','localhost']
 
 # Application definition
 
